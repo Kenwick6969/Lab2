@@ -1,17 +1,18 @@
 def Calculate_Temperature(Temperatures):
     """ Calculate The Average, Minimum And Maximum Temperature From A List Of Temperatures. """
+    print("Calculating Temperature...") #Message To Indicate Code Is Working
+
+    list.sort(Temperatures)
     Average = float(sum(Temperatures) / len(Temperatures))
     Maximum = max(Temperatures)
     Minimum = min(Temperatures)
+    Median = (Temperatures)[len(Temperatures) // 2]
 
     print ("The Average Temperature Is: " + str(Average)) #Output The Average
     print ("The Maximum Temperature Is: " + str(Maximum)) #Output The Maximum
     print ("The Minimum Temperature Is: " + str(Minimum)) #Output The Minimum
-
-
-
-    print("Calculating Temperature...") #Message To Indicate Code Is Working
-
+    print ("The Median Temperature Is: " + str(Median)) #Output The Median
+    print ("The Sorted List Of Temperatures Is: " + str(Temperatures)) #Output The Sorted List
 
 def Main_Menu():
     """ Main Menu For Temperature Calculator """\
