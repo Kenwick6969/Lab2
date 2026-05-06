@@ -10,12 +10,15 @@ def calculate_bmi(Weight, Height):
     #BMI Categories
     if BodyMassIndex < 18.5:
         print ("BMI Weight Classification: Underweight") #Weight Classification Underweight
+        return -1
 
     elif 18.5 <= BodyMassIndex < 25:
         print ("BMI Weight Classification: Normal Weight") #Weight Classification Normal Weight
+        return 0
 
     elif 25 <= BodyMassIndex < 50:
         print ("BMI Weight Classification: Overweight") #Weight Classification Overweight
+        return 1
 
     else:
         print ("BMI Weight Classification: OH HELL NO! YOU ARE BEYOND OVERWEIGHT! PLEASE GET SOME HELP!") #Weight Classification Whale
